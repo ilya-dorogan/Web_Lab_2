@@ -1,0 +1,245 @@
+
+/*Обнуление*/
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:active, /* активная/посещенная ссылка */
+a:hover,  /* при наведении */
+a{
+  	text-decoration: none;
+	color: #333333;
+}
+
+nav,footer,header,aside{display: block;}
+
+html,body{	
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*--------------------*/
+@font-face {
+	font-family: 'AKsans250';
+	src: url('../fonts/AKsans-250.eot');
+	src: local('☺'), url('../fonts/AKsans-250.woff') format('woff'), url('../fonts/AKsans-250.ttf') format('truetype'), url('../fonts/AKsans-250.svg') format('svg');
+	
+}
+
+@font-face {
+	font-family: 'Signalist';
+	src: url('../fonts/FontsFree-Net-Signalist-W00-Signalist.eot');
+	src: local('☺'), url('../fonts/FontsFree-Net-Signalist-W00-Signalist.woff') format('woff'), url('../fonts/FontsFree-Net-Signalist-W00-Signalist.ttf') format('truetype'), url('../fonts/FontsFree-Net-Signalist-W00-Signalist.svg') format('svg');
+	
+}
+
+@font-face {
+	font-family: 'Conv_Corporate';
+	src: url('../fonts/Corporate S SC Regular.eot');
+	src: local('☺'), url('../fonts/Corporate S SC Regular.woff') format('woff'), url('../fonts/Corporate S SC Regular.ttf') format('truetype'), url('../fonts/Corporate S SC Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Corporate_Demi';
+	src: url('../fonts/CorporateS Demi Regular.eot');
+	src: local('☺'), url('../fonts/CorporateS Demi Regular.woff') format('woff'), url('../fonts/CorporateS Demi Regular.ttf') format('truetype'), url('../fonts/CorporateS Demi Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.current{
+	font-weight: bolder;
+}
+
+
+.site__header{
+	background:url('../img/site-background.jpg')0 0/cover no-repeat fixed;
+}
+
+.site__navigation{
+	padding: 13px 32px ;
+}
+
+.site__navigation-Horace{
+	font-family: Signalist;
+	color: #2f313d;
+	font-size: 47px;
+}
+
+.site__navigation li{
+	display: inline;
+}
+
+
+
+.site__navigation-menu{
+	font-family: arial;
+	color: #2f313d;
+	font-size: 14px;
+	padding-left: 35px;
+}
+
+.site__navigation-menu a:hover {
+	text-decoration:underline
+}
+
+.site__top_photo {
+	padding-top: 63px;
+	padding-bottom: 63px; 
+    margin: 0 auto;
+  	width: 127px;
+}
+
+.site__top_greeting {
+	color: #2f313d;
+	font-family:AKsans250;
+	font-size: 40px;
+	text-align: center;
+	margin-bottom: 35px;
+}
+
+.site__top_bio {
+	line-height: 1.5;
+	font-family: Arial;
+	margin: 0 auto;
+	max-width: 685px;
+	font-size: 18px;
+	text-align: center;
+	padding-bottom: 70px; 
+	color: #646468;
+}
+
+.site__latest{
+	font-family: Conv_Corporate;
+	letter-spacing: 0.2em;
+	font-size: 14px;
+	margin-top: 65px;
+	padding-left: 16.5%;
+	margin-bottom: 17px;
+}
+
+.site__line{
+	background-color: #d61a77;
+	width: 60px;
+	height: 1px;
+	margin-top: 10px;
+	margin-bottom: 38px;
+}
+
+.site__centr{
+	background-color: white;
+	margin-left:auto;
+	margin-right:auto;
+	max-width: 1090px;
+}
+
+.article__body{
+	padding-left: 16.5%;
+}
+
+.article {
+	margin-top: 5px;
+	margin-bottom: px;
+}
+
+.article_img {
+	margin-top: 25px;
+	float: left;
+}
+
+
+
+.article__time {
+	font-family: Arial;
+	color: #a2a2a8;
+	font-size: 12px;
+	margin-bottom: 22px;
+}
+
+.article__title {
+	font-weight: bold;
+	font-family: Corporate_Demi;
+	font-size: 30px;
+	margin-bottom: 31px;
+}
+
+
+.artile__text {
+	text-align: left;
+	font-family: arial;
+	font-size: 16px;
+	color: #666666;
+	line-height: 180%;
+	margin-bottom: 45px;
+	max-width:538px;
+}
+
+.article__tag {
+	font-family: arial;
+	display: inline;
+	font-size: 13px;
+	color: #d61a77;
+}
+
+.site__separator{
+	background-color: #e5e7e9;
+	margin-right: auto;
+	margin-left: auto;
+	max-width: 720px;
+	height: 1px;
+	margin-bottom: 72px;
+}
+
+.site__page{
+	font-family: arial;
+	text-align: center;
+	font-size: 10px;
+	color: #b6b6bb;
+}
+
+.site__page_arrow{
+	margin-left: 75%;w
+}
+
+.site__footer{
+	font-size: 8px;
+	margin-top: 100px;
+	font-family: arial;
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+.site__footer a{
+	color: #d61a77;
+}
+
+.site__footer_text{
+	margin-bottom: 35px;
+}
+
+
+
